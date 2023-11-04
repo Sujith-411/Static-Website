@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        :root {
+
+            --primary-color: goldenrod;
+            --secondary-color: rgb(243, 243, 243);
+
+
+        }
+
+        /* Nav starts here */
+
+        ul li {
+            list-style-type: none;
+            display: inline;
+            padding: 0px 5px;
+
+        }
+
+        .logo {
+            color: rgb(82, 14, 14);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        nav {
+            height: 40px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 10px;
+        }
+
+        .courseList {
+            position: absolute;
+            top: 15px;
+            left: -8px;
+            display: none;
+        }
+
+        .courseList li {
+
+
+            padding: 10px;
+            width: 74px;
+            background-color: black;
+            display: block;
+
+
+        }
+
+        .course {
+            position: relative;
+        }
+
+        .course:hover .courseList {
+            display: block;
+        }
+
+        .logo a {
+            color: var(--secondary-color);
+        }
+
+        /* Nav End here */
+
+
+        /* Banner Sec 1 start Here  */
+        .bannerSec1 {
+            height: 500px;
+            background-image: url(./images/Banner1.jpg.jpg);
+            background-size: cover;
+        }
+
+        .banner1Content {
+            height: 200px;
+            width: 90%;
+            color: rgb(255, 255, 255);
+            padding: 20% 0% 0% 40%;
+
+
+
+        }
+
+        /* Banner Sec 1 Ends Here  */
+
+        /* Card Section Starts Here */
+        .card {
+            height: 250px;
+            width: 150px;
+            margin: 10px 20px;
+            border: 0.5px solid rgb(121, 121, 121);
+            padding: 9px;
+            border-radius: 5px;
+            /* border: none; */
+            background-color: rgb(238, 238, 238);
+
+
+        }
+
+        .card:hover {
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+
+        .img img {
+            height: 100px;
+            width: 130px;
+
+        }
+
+        .detBtn a {
+
+
+            color: var(--secondary-color);
+
+
+        }
+
+        .btnCont {
+            height: 50px;
+            width: 94px;
+            margin: auto;
+        }
+
+        .detBtn {
+            border: none;
+            background-color: blue;
+            padding: 4px 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .cardSection {
+
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: black;
+            padding: 20px 0;
+        }
+
+        .address {
+            width: 200px;
+            color: var(--secondary-color);
+        }
+
+        ol li {
+            list-style-type: none;
+            padding: 3px 0;
+        }
+
+        /* Card Section Ends Here */
+
+        #fixedSec{
+            height: 200px;
+            background-image: url(./images/Banner1.jpg.jpg);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Starts Here  -->
+
+    <header>
+
+        <nav>
+            <div class="logo"> <a href="./Animation.html" target="_blank">Logo <i class="fa-brands fa-twitter"></i><i
+                        class="fa-brands fa-facebook"></i> <i class="fa-solid fa-house"></i></a> </div>
+
+            <div class="navSec">
+                <ul>
+                    <li><a href="#"> <i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="#"> About</a></li>
+                    <li class="course"><a href="#"> Course</a>
+
+                        <ul class="courseList">
+                            <li><a href="#">React Js</a></li>
+                            <li><a href="#">Angular</a></li>
+                            <li><a href="#">Vue Js</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact"> Contact Us </a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Header Ends Here  -->
+
+
+    <!-- Banner section 1 starts here -->
+
+    <section>
+        <div class="bannerSec1">
+            <div class="banner1Content">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus at voluptatem voluptatibus beatae
+                    ipsum recusandae facere, repellendus, quia odit quibusdam error ea repudiandae? Facilis placeat nam
+                    tempora dignissimos repudiandae perspiciatis sunt id tempore qui ducimus, nostrum odit voluptatem
+                    enim incidunt odio neque ab laudantium sit sequi repellendus molestiae, ad harum.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Banner section 1 ends here -->
+
+
+    <!-- Card Section Starts Here -->
+    <section>
+
+        <div class="cardSection">
+            <div class="card">
+                <div class="img">
+                    <img src="../images/flower.jpeg" alt="Flower image">
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+
+                    <div class="btnCont">
+                        <button class="detBtn"> <a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../images/flower.jpeg" alt="Flower image">
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+
+                    <div class="btnCont">
+                        <button class="detBtn"> <a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../images/flower.jpeg" alt="Flower image">
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+
+                    <div class="btnCont">
+                        <button class="detBtn"> <a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../images/flower.jpeg" alt="Flower image">
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+
+                    <div class="btnCont">
+                        <button class="detBtn"> <a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../images/flower.jpeg" alt="Flower image">
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+
+                    <div class="btnCont">
+                        <button class="detBtn"> <a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../images/flower.jpeg" alt="Flower image">
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+
+                    <div class="btnCont">
+                        <button class="detBtn"> <a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../images/flower.jpeg" alt="Flower image">
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+
+                    <div class="btnCont">
+                        <button class="detBtn"> <a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../images/flower.jpeg" alt="Flower image">
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+
+                    <div class="btnCont">
+                        <button class="detBtn"> <a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../images/flower.jpeg" alt="Flower image">
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+
+                    <div class="btnCont">
+                        <button class="detBtn"> <a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../images/flower.jpeg" alt="Flower image">
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+
+                    <div class="btnCont">
+                        <button class="detBtn"> <a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../images/flower.jpeg" alt="Flower image">
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+
+                    <div class="btnCont">
+                        <button class="detBtn"> <a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../images/flower.jpeg" alt="Flower image">
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+
+                    <div class="btnCont">
+                        <button class="detBtn"> <a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Fixed Banner Section  Starts Here-->
+    <section id="fixedSec">
+    
+
+
+    </section>
+    <!-- Fixed Banner Ends Section -->
+
+
+    <!--Footer Starts Here  -->
+    <footer>
+        <div class="address">
+            <p> 13/21 Church Street Neyyoor ,</p>
+            <p>pin: 120828903;</p>
+            <p><i class="fa-solid fa-envelope"></i> : namawebsite@gmail.com</p>
+        </div>
+        <div class="service">
+            <ol>
+                <li><a href="#">service a</a></li>
+                <li><a href="#">service b</a></li>
+                <li><a href="#">service c</a></li>
+
+            </ol>
+        </div>
+        <div class="service">
+            <ol>
+                <li><a href="#">service 1</a></li>
+                <li><a href="#">service 2</a></li>
+                <li><a href="#">service 3</a></li>
+
+            </ol>
+        </div>
+        <div class="service">
+            <ol>
+                <li><a href="#">service A</a></li>
+                <li><a href="#">service B</a></li>
+                <li><a href="#">service C</a></li>
+
+            </ol>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
